@@ -1,12 +1,10 @@
 const bodyParser = require('body-parser');
 const RouteLoader = require('./routes');
 const express = require('express');
+const cors = require('cors');
 require('../config/enviroments');
 
-const cors = require('cors');
-
 let app = express();
-
 const port = process.env.NODE_PORT;
 const front_port = process.env.REACT_PORT;
 
